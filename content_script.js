@@ -1,7 +1,7 @@
-var button = document.getElementById("logo");
+var buttons = document.getElementsByClassName("response-button");
 setInterval(() => {  
-if (button) {
-  button.click();
-  console.log("I clicked ")
-}
-},5000)
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].click();
+    console.log("I clicked ");
+  }
+}, 1000);
